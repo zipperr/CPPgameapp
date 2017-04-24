@@ -1,5 +1,6 @@
 #include "DxLib.h"
 #include <math.h>
+#include "Source1.h"
 
 #define SHOT 20
 
@@ -91,7 +92,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	{
 		// 画面を初期化(真っ黒にする)
 		ClearDrawScreen();
-
+		Player_test();
 		// 自機の操作ルーチン
 		{
 			// ↑キーを押していたらボール君を上に移動させる
