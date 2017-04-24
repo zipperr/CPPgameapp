@@ -1,4 +1,4 @@
-# Visual Stadio + DXライブラリにてWEBゲームアプリの開発  
+# Visual Stadio + DXライブラリにてC++ゲームアプリの開発  
 ###  
 ###  
 # 落ち物ゲーム
