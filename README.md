@@ -1,10 +1,9 @@
-# Visual Stadio + DXライブラリにてWEBゲームアプリの開発  
+# Visual Stadio + DX繝ｩ繧､繝悶Λ繝ｪ縺ｫ縺ｦWEB繧ｲ繝ｼ繝繧｢繝励Μ縺ｮ髢狗匱  
 ###  
 ###  
-# 落ち物ゲーム  
+# 關ｽ縺｡迚ｩ繧ｲ繝ｼ繝
+![result](https://github.com/zipperr/media/blob/master/test.gif)
+###  
+# 繧ｷ繝･繝ｼ繝�繧｣繝ｳ繧ｰ繧ｲ繝ｼ繝 ﾂ
 ##  
-<img src="blob:http://imgur.com/5385b393-85dd-4848-b1c4-450e05bac0e2" alt="alt" title="title">  
-##  
-# 落ち物ゲーム  
-##  
-<img src="blob:http://imgur.com/f00213f9-b612-4af8-a5b8-fe70c78c34ae" alt="alt" title="title">  
+![result](https://github.com/zipperr/media/blob/master/test2.gif) 
