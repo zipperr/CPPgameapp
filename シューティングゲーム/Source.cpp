@@ -61,7 +61,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	ETamaCounter = 0;
 
 	// 弾のグラフィックをメモリにロード
-	ShotGraph = LoadGraph("japa2.png");
+	ShotGraph = LoadGraph("japa.png");
 
 	// 弾が画面上に存在しているか保持する変数に『存在していない』を意味する０を代入しておく
 	for (i = 0; i < SHOT; i++)
@@ -154,7 +154,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 			if (BallY > 480 - 64) BallY = 480 - 64;
 
 			// 自機を描画
-			DrawGraph(BallX, BallY, BallGraph, FALSE);
+			DrawGraph(BallX, BallY, BallGraph, TRUE);
 		}
 
 		// 弾の数だけ弾を動かす処理を繰り返す
@@ -173,7 +173,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 				}
 
 				// 画面に弾iを描画する
-				DrawGraph(ShotX[i], ShotY[i], ShotGraph, FALSE);
+				DrawGraph(ShotX[i], ShotY[i], ShotGraph, TRUE);
 			}
 		}
 
@@ -183,7 +183,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 			if (SikakuDamageFlag == 1)
 			{
 				// 顔を歪めている場合はダメージ時のグラフィックを描画する
-				DrawGraph(SikakuX, SikakuY, SikakuDamageGraph, FALSE);
+				DrawGraph(SikakuX, SikakuY, SikakuDamageGraph, TRUE);
 
 				// 顔を歪めている時間を測るカウンターに１を加算する
 				SikakuDamageCounter++;
@@ -219,7 +219,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 				}
 
 				// 敵を描画
-				DrawGraph(SikakuX, SikakuY, SikakuGraph, FALSE);
+				DrawGraph(SikakuX, SikakuY, SikakuGraph, TRUE);
 
 				// 弾を撃つタイミングを計測するためのカウンターに１を足す
 				ETamaCounter++;
@@ -279,7 +279,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 				ETamaX > 640 || ETamaX < 0) ETamaFlag = 0;
 
 			// 画面に描画する( ETamaGraph : 敵の弾のグラフィックのハンドル )
-			DrawGraph((int)ETamaX, (int)ETamaY, ETamaGraph, FALSE);
+			DrawGraph((int)ETamaX, (int)ETamaY, ETamaGraph, TRUE);
 		}
 
 		// 弾と敵の当たり判定、弾の数だけ繰り返す
